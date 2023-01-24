@@ -1,3 +1,7 @@
+html {
+    background-color: black;
+}
+
 .three-d-text {
     text-shadow: 1px 1px #7a610e, 2px 2px #7a610e4d, 3px 3px #7a610e9c,
     0 0 5px rgba(0, 0, 0, 0.329), 0 0 10px rgba(0, 0, 0, 0.514), 0 0 15px rgba(0, 0, 0, 0.733);
