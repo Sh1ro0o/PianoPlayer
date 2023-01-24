@@ -13,11 +13,17 @@ html {
     color: rgba(0, 0, 0, 0.76);
 }
 
-button {
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.piano-button {
     height: 150px;
     width: 100px;
     background-color: gold;
-    color: white;
     font-size: 16px;
     padding: 12px 24px;
     border-radius: 25px;
@@ -26,19 +32,31 @@ button {
     animation: glowing 2s alternate ease-in-out infinite;
 }
   
-button:hover {
-    box-shadow: 10px rgb(20, 140, 161);
+.piano-button-pressed {
+    background-color: rgb(68, 164, 255);
+    border: none;
+    box-shadow: 0 0 35px rgb(22, 239, 255), 0 0 35px rgb(12, 206, 255);
+    animation: splash 1s ease-out;
+    animation-iteration-count: 0;
 }
 
-.buttons-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10%;
+.piano-button-pressed > .three-d-text
+{
+    text-shadow: 1px 1px #0c7981, 2px 2px #15919686, 3px 3px #23c4b69c,
+    0 0 5px rgba(0, 0, 0, 0.329), 0 0 10px rgba(0, 0, 0, 0.514), 0 0 15px rgba(0, 0, 0, 0.733);
 }
 
 @keyframes glowing {
     0% { box-shadow: 0 0 25px rgb(182, 179, 0), 0 0 25px goldenrod }
     50% { box-shadow: 0 0 35px rgb(231, 228, 9), 0 0 35px goldenrod }
     100% { box-shadow: 0 0 50px rgb(253, 249, 0), 0 0 50px goldenrod }
+}
+
+@keyframes splash {
+    0% {
+        box-shadow: 0 0 0 0 cyan;
+    }
+    100% {
+        box-shadow: 0 0 50px 25px cyan;
+    }
 }
