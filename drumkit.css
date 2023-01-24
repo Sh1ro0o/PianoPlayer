@@ -1,0 +1,40 @@
+.three-d-text {
+    text-shadow: 1px 1px #7a610e, 2px 2px #7a610e4d, 3px 3px #7a610e9c,
+    0 0 5px rgba(0, 0, 0, 0.329), 0 0 10px rgba(0, 0, 0, 0.514), 0 0 15px rgba(0, 0, 0, 0.733);
+    transform: rotateX(30deg);
+    font-size: 4em;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+button {
+    height: 150px;
+    width: 100px;
+    background-color: gold;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: glowing 2s alternate ease-in-out infinite;
+}
+  
+button:hover {
+    box-shadow: 10px rgb(20, 140, 161);
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 25px rgb(182, 179, 0), 0 0 25px goldenrod }
+    50% { box-shadow: 0 0 35px rgb(231, 228, 9), 0 0 35px goldenrod }
+    100% { box-shadow: 0 0 50px rgb(253, 249, 0), 0 0 50px goldenrod }
+}
