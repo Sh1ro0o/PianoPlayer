@@ -35,7 +35,7 @@ html {
     width: 100px;
     background-color: gold;
     border-radius: 25px;
-    border: none;
+    border: 2px rgba(87, 73, 5, 0.473) solid;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
     animation: glowing 2s alternate ease-in-out infinite;
     align-self: flex-end;
